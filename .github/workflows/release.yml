@@ -43,5 +43,5 @@ jobs:
       - run: npm run release
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GHA_READ_WRITE_TOKEN }}
       
